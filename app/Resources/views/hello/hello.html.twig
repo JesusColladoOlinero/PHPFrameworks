@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Listado de Estados</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Estado</th>
+    </tr>
+    {% for estado in estados %}
+    <tr>
+        <td>{{ estado.id }}</td>
+        <td>{{ estado.nombre }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
