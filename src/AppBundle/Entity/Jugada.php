@@ -39,9 +39,30 @@ class Jugada
     /**
      * @var string
      *
-     * @ORM\Column(name="Propuesta", type="string", length=255)
+     * @ORM\Column(name="Color1", type="string", length=50)
      */
-    private $propuesta;
+    private $color1;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Color2", type="string", length=50)
+     */
+    private $color2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Color3", type="string", length=50)
+     */
+    private $color3;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Color4", type="string", length=50)
+     */
+    private $color4;
 
     /**
      * @var string
@@ -110,27 +131,99 @@ class Jugada
     }
 
     /**
-     * Set propuesta
+     * Set color1
      *
-     * @param string $propuesta
+     * @param string $color1
      *
      * @return Jugada
      */
-    public function setPropuesta($propuesta)
+    public function setColor1($color1)
     {
-        $this->propuesta = $propuesta;
+        $this->color1 = $color1;
 
         return $this;
     }
 
     /**
-     * Get propuesta
+     * Get color1
      *
      * @return string
      */
-    public function getPropuesta()
+    public function getColor1()
     {
-        return $this->propuesta;
+        return $this->color1;
+    }
+
+    /**
+     * Set color2
+     *
+     * @param string $color2
+     *
+     * @return Jugada
+     */
+    public function setColor2($color2)
+    {
+        $this->color2 = $color2;
+
+        return $this;
+    }
+
+    /**
+     * Get color2
+     *
+     * @return string
+     */
+    public function getColor2()
+    {
+        return $this->color2;
+    }
+
+    /**
+     * Set color3
+     *
+     * @param string $color3
+     *
+     * @return Jugada
+     */
+    public function setColor3($color3)
+    {
+        $this->color3 = $color3;
+
+        return $this;
+    }
+
+    /**
+     * Get color3
+     *
+     * @return string
+     */
+    public function getColor3()
+    {
+        return $this->color3;
+    }
+
+    /**
+     * Set color4
+     *
+     * @param string $color4
+     *
+     * @return Jugada
+     */
+    public function setColor4($color4)
+    {
+        $this->color4 = $color4;
+
+        return $this;
+    }
+
+    /**
+     * Get color4
+     *
+     * @return string
+     */
+    public function getColor4()
+    {
+        return $this->color4;
     }
 
     /**

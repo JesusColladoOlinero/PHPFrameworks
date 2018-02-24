@@ -10,14 +10,20 @@
 <table border="1">
     <tr>
         <th>ID</th>
-        <th>Propuesta</th>
+        <th>Color 1</th>
+        <th>Color 2</th>
+        <th>Color 3</th>
+        <th>Color 4</th>
         <th>Resultado</th>
         <th>Fecha</th>
     </tr>
     {% for jugada in jugadas %}
     <tr>
         <td>{{ jugada.id }}</td>
-        <td>{{ jugada.propuesta }}</td>
+        <td>{{ jugada.color1 }}</td>
+        <td>{{ jugada.color2 }}</td>
+        <td>{{ jugada.color3 }}</td>
+        <td>{{ jugada.color4 }}</td>
         <td>{{ jugada.resultado }}</td>
         <td>{{ jugada.fecha }}</td>
     </tr>
@@ -26,4 +32,12 @@
 {% else %}
         <h2>Actualmente no ha comenzado la partida.</h2>
 {% endif %}
+    <hr>
+    <h3>Nueva Jugada</h3>
+
+    {# app/Resources/views/partidas/jugadas.html.twig #}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+
 {% endblock %}

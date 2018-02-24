@@ -43,19 +43,17 @@ class PartidasController extends Controller
      */
     public function nuevaPartidaAction(Request $request)
     {
-        // just setup a fresh $task object (remove the dummy data)
         $partida = new Partida();
 
         $form = $this->createFormBuilder($partida)
-            ->add('nombre', TextType::class)
+            ->add('nombre', TextType::class, ['required' => true])
             ->add('save', SubmitType::class, array('label' => 'Crear Partida'))
             ->getForm();
 
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            // $form->getData() holds the submitted values
-            // but, the original `$task` variable has also been updated
+            // obtenemos los datos del formulario
             $partida = $form->getData();
 
             // marcamos la partida como en juego
@@ -74,7 +72,7 @@ class PartidasController extends Controller
             $em->flush();
 
             // redirigimos al listado de partidas
-            return $this->redirectToRoute('partidas');
+            return $this->redirectToRoute('jugadas', array('id' => $partida->getId()));
         }
 
         return $this->render('partidas/nueva.html.twig', array(
