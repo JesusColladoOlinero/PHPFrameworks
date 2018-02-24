@@ -23,4 +23,13 @@ WITH p.estado =
  e.id')
             ->getResult();
     }
+
+    public function getDatosPartida($id)
+    {
+        return $this->getEntityManager()
+            ->createQuery('SELECT p.id, p.nombre, p.combinacion, e.nombre as estado FROM AppBundle\Entity\Partida p JOIN AppBundle\Entity\Estados e 
+WITH p.estado = e.id WHERE p.id = :idPartida')
+            ->setParameter('idPartida', $id)
+            ->getSingleResult();
+    }
 }

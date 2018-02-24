@@ -18,10 +18,10 @@ class JugadaRepository extends \Doctrine\ORM\EntityRepository
      */
     public function getJugadas($id)
     {
-        $em = $this->getManager();
+        $em = $this->getEntityManager();
 
         // Todas las jugadas de una determinada partida
-        $users = $em->getRepository('AppBundle\Entity\Jugada')->findBy(array('IdPartida' => $id));
+        $users = $em->getRepository('AppBundle\Entity\Jugada')->findBy(array('idPartida' => $id));
 
         return $users;
     }

@@ -41,10 +41,52 @@ class HelloController extends Controller
 //        }
 //
 //        die();
+        $seleccion = $this->GetCombinacion();
+
+        echo $seleccion;
 
         return $this->render('hello/hello.html.twig', [
             'estados' => $estados,
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
+    }
+
+
+//    private function GetCombinacion(){
+//        $colores = array("rojo", "azul", "amarillo", "verde", "negro", "blanco");
+//        //echo "Array original";
+//        var_export ($colores);
+//        $seleccion = array_rand($colores, 4);
+//
+//        foreach ($seleccion as $estado) {
+//            echo $colores[$estado];
+//            echo "<br/>";
+//        }
+//    }
+
+    function GetCombinacion() {
+        $array = array("rojo", "azul", "amarillo", "verde", "negro", "blanco");
+        $keys = array_keys($array);
+        $new = "";
+
+        shuffle($keys);
+
+        $i = 0;
+
+        foreach($keys as $key) {
+            if ($i == 4)
+                break;
+
+            if ($new == ""){
+                $new = $array[$key];
+            }
+            else{
+                $new = $new .",". $array[$key];
+            }
+
+            $i = $i + 1;
+        }
+
+        return $new;
     }
 }

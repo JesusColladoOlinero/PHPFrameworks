@@ -16,11 +16,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
-class PartidasController  extends Controller
+class PartidasController extends Controller
 {
     /**
-     * @Route("/partidas", name="partidas")
-     */
+ * @Route("/partidas", name="partidas")
+ */
     public function getPartidasAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -62,7 +62,7 @@ class PartidasController  extends Controller
             $partida->setEstado(1);
 
             // generamos la combinación secreta
-            $partida->setCombinacion("Amarillo,Azul,Rojo,Verde");
+            $partida->setCombinacion($this->GetCombinacion());
 
             $dt = date_create(date('Y-m-d H:i:s'));
             // Obtenemos la fecha de acción
@@ -82,4 +82,31 @@ class PartidasController  extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ));
     }
+
+    function GetCombinacion() {
+        $array = array("rojo", "azul", "amarillo", "verde", "negro", "blanco");
+        $keys = array_keys($array);
+        $new = "";
+
+        shuffle($keys);
+
+        $i = 0;
+
+        foreach($keys as $key) {
+            if ($i == 4)
+                break;
+
+            if ($new == ""){
+                $new = $array[$key];
+            }
+            else{
+                $new = $new .",". $array[$key];
+            }
+
+            $i = $i + 1;
+        }
+
+        return $new;
+    }
+
 }
