@@ -67,6 +67,20 @@ class Jugada
     /**
      * @var string
      *
+     * @ORM\Column(name="Color5", type="string", length=50)
+     */
+    private $color5;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Color6", type="string", length=50)
+     */
+    private $color6;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="Resultado", type="string", length=255)
      */
     private $resultado;
@@ -224,6 +238,54 @@ class Jugada
     public function getColor4()
     {
         return $this->color4;
+    }
+
+    /**
+     * Set color5
+     *
+     * @param string $color5
+     *
+     * @return Jugada
+     */
+    public function setColor5($color5)
+    {
+        $this->color5 = $color5;
+
+        return $this;
+    }
+
+    /**
+     * Get color5
+     *
+     * @return string
+     */
+    public function getColor5()
+    {
+        return $this->color5;
+    }
+
+    /**
+     * Set color6
+     *
+     * @param string $color6
+     *
+     * @return Jugada
+     */
+    public function setColor6($color6)
+    {
+        $this->color6 = $color6;
+
+        return $this;
+    }
+
+    /**
+     * Get color6
+     *
+     * @return string
+     */
+    public function getColor6()
+    {
+        return $this->color6;
     }
 
     /**

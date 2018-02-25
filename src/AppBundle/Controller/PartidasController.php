@@ -19,8 +19,10 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 class PartidasController extends Controller
 {
     /**
- * @Route("/partidas", name="partidas")
- */
+     * Obtiene todas la partidas
+     *
+     * @Route("/partidas", name="partidas")
+     */
     public function getPartidasAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -39,6 +41,8 @@ class PartidasController extends Controller
     }
 
     /**
+     * Crea una nueva partida a partir de un formulario
+     *
      * @Route("/nueva-partida", name="nueva-partida")
      */
     public function nuevaPartidaAction(Request $request)
@@ -81,8 +85,9 @@ class PartidasController extends Controller
         ));
     }
 
-    function GetCombinacion() {
-        $array = array("rojo", "azul", "amarillo", "verde", "negro", "blanco");
+    // Genera la combinación secreta de 6 colores a partir de 10 disponibles y sin repetirse.
+    private function GetCombinacion() {
+        $array = array("rojo", "naranja", "amarillo", "verde", "azul", "lila", "rosa", "gris", "negro", "blanco");
         $keys = array_keys($array);
         $new = "";
 
@@ -91,7 +96,7 @@ class PartidasController extends Controller
         $i = 0;
 
         foreach($keys as $key) {
-            if ($i == 4)
+            if ($i == 6)
                 break;
 
             if ($new == ""){

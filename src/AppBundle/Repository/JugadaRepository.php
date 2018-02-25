@@ -21,7 +21,7 @@ class JugadaRepository extends \Doctrine\ORM\EntityRepository
         $em = $this->getEntityManager();
 
         // Todas las jugadas de una determinada partida
-        $users = $em->getRepository('AppBundle\Entity\Jugada')->findBy(array('idPartida' => $id));
+        $users = $em->getRepository('AppBundle\Entity\Jugada')->findBy(array('idPartida' => $id), array('id'=>'desc'));
 
         return $users;
     }
