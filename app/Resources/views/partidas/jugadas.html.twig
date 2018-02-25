@@ -3,10 +3,10 @@
 {% block body %}
     <h1>Datos de partida</h1>
     <div>Nombre: {{ partida.nombre }}</div>
-    <div class="{{ resultado }}">Estado: {{ partida.estado }}</div>
-    <hr>
+    <div class="{{ resultado }}"> <<<<< {{ partida.estado }} >>>>> </div>
+<hr>
 <h2>Listado de Jugadas</h2>
-    {% if jugadas %}
+{% if jugadas %}
 <table border="1">
     <tr>
         <th>Jugada</th>

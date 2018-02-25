@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fd67bc2-6804-435a-a67d-6ff5997933ef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/partidas/jugadas.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/partidas/jugadas.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/PartidasController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PartidasController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Jugada.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Jugada.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/JugadaRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/JugadaRepository.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/PartidaRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/PartidaRepository.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JugadaController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JugadaController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="36" column="60" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+            <state relative-caret-position="255">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#121#149#0#PHP" expanded="true" />
                 <element signature="e#4388#4505#0#PHP" expanded="false" />
@@ -47,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jugadas.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jugadas.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/partidas/jugadas.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="85">
+              <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -107,11 +100,11 @@
         <option value="$PROJECT_DIR$/app/Resources/views/partidas/partidas.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Jugada.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/JugadaRepository.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/partidas/jugadas.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/PartidaRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/PartidasController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/partidas/jugadas.html.twig" />
       </list>
     </option>
   </component>
@@ -317,12 +310,12 @@
       <workItem from="1519482868797" duration="1168000" />
       <workItem from="1519484349936" duration="20000" />
       <workItem from="1519484396328" duration="6548000" />
-      <workItem from="1519544213524" duration="7294000" />
+      <workItem from="1519544213524" duration="7712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45471000" />
+    <option name="totallyTimeSpent" value="45889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="283" y="0" width="1630" height="1047" extended-state="0" />
@@ -728,14 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/partidas/jugadas.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -765,8 +750,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="36" column="60" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+        <state relative-caret-position="255">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="e#121#149#0#PHP" expanded="true" />
             <element signature="e#4388#4505#0#PHP" expanded="false" />
@@ -782,6 +767,14 @@
             <element signature="e#13341#13505#0#PHP" expanded="false" />
             <element signature="e#13510#13642#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/partidas/jugadas.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+          <folding />
         </state>
       </provider>
     </entry>
