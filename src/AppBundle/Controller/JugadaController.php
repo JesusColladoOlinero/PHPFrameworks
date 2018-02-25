@@ -35,7 +35,7 @@ class JugadaController extends Controller
         $errorForm = "";
 
         // Numero de jugadas máximas para completar el juego
-        $numJugadasMax = 5;
+        $numJugadasMax = 15;
 
         // Obtenemos los datos de la partida
         $partida = $em->getRepository('AppBundle\Entity\Partida')
